@@ -1,3 +1,11 @@
+'''
+Análisis y Diseño de Algoritmos - Sección 20
+Proyecto 2
+Minimum Coin Change Problem - DaC
+
+Autores: Diego Aquino y Pablo Zamora
+'''
+
 import sys
 def minCoinChange (coin, m, K):
     if K == 0:
