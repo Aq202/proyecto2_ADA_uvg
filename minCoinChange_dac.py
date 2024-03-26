@@ -7,7 +7,7 @@ def minCoinChange (coin, m, K):
         if coin[i] <= K:
             tempResult = 1 + minCoinChange (coin, m, K - coin[i])
             if tempResult < minCount:
-                minCount = tempResult + 1
+                minCount = tempResult
     
     if minCount == sys.maxsize:
         return -1
