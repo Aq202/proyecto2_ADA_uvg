@@ -1,4 +1,3 @@
-import sys
 '''
 Análisis y Diseño de Algoritmos - Sección 20
 Proyecto 2
@@ -7,6 +6,8 @@ Minimum Coin Change Problem - Programación Dinámica
 Autores: Diego Aquino y Pablo Zamora
 '''
 
+import time
+import sys
 def minCoinChange (coin, m, K):
     if K == 0:
         return 0
@@ -23,5 +24,8 @@ def minCoinChange (coin, m, K):
         return -1
     return change[K]
     
+start_time = time.time()
 
-print(minCoinChange([1,5,10], 3, 30))
+minCoinChange([1,5,10,15,20,25,30,35,40,45,50,55,60,65,70], 15, 175)
+
+print(f"{(time.time() - start_time)}")

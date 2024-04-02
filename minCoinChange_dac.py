@@ -7,6 +7,7 @@ Autores: Diego Aquino y Pablo Zamora
 '''
 
 import sys
+import time
 def minCoinChange (coin, m, K):
     if K == 0:
         return 0
@@ -21,5 +22,8 @@ def minCoinChange (coin, m, K):
         return -1
     return minCount
     
+start_time = time.time()
 
-print(minCoinChange([1,5,10], 3, 30))
+minCoinChange([1,5,10,15,20,25], 6, 15)
+
+print(f"{(time.time() - start_time)}")
